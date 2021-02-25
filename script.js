@@ -151,6 +151,8 @@ const colors = [
 
     
     function changeColor() {
-    const randomColors = Math.floor(Math.random() * colors.length)
+    const randomColors = Math.floor(Math.random() * colors.length);
     document.body.style.backgroundColor = colors[randomColors];
+    //document.getElementsByTagName('h1').innerHTML(document.body.style.backgroundColor);
+    document.getElementById('h1').innerHTML = document.body.style.backgroundColor;
 }
